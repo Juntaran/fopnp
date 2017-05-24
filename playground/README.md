@@ -51,6 +51,23 @@ machine in the network — against one of the other hosts.
 
 ## Launching the Playground
 
+___
+
+鉴于`China`的独特性，该文以下方法不可用，特此更新方案  
+
+* 安装 vagrant 和 virtualbox
+* 创建 vagrant 文件夹作为工程目录
+* 下载 playground  
+> https://atlas.hashicorp.com/brandon-rhodes/boxes/playground/versions/1.0/providers/virtualbox.box
+
+* 在cmd/git bash中，cd 进入刚刚建立的 vagrant 目录，执行以下 vagrant 命令
+> vagrant init brandon-rhodes/playground  
+> vagrant box add brandon-rhodes/playground virtualbox.box  
+> vagrant up  
+> vagrant ssh 或 xshell 连接127.0.0.1:2200  用户名/密码：vagrant
+
+___
+
 The network playground is a Vagrant box that, after you have Vagrant
 installed and running on your platform, you can download and run by
 typing::
